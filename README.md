@@ -4,6 +4,11 @@ Educational Attainment reports the level of education of individuals over the ag
 
 Data Source: U.S. Census ACS 5-Year Estimates Table B15002
 
+### To update
+* Use data.census.gov to download a new 5-year release and put it in `raw/` folder, renaming in line with other files
+* In the new dataset, create a new column with 10-digit FIPS codes just like older files (Excel or pandas)
+* Rename the first three columns to match older files (Id, Id2, Geography)
+
 ## License MIT
 
 ## Getting Setup
