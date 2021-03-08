@@ -21,7 +21,7 @@ raw_location <- grep("raw", sub_folders, value=T)
 path_to_raw <- (paste0(getwd(), "/", raw_location))
 
 ctGeos <- getCTGeos()
-yearList = c(2010:2018)
+yearList = c(2010:2019)
 tn = "B15002"
 acsdata <- getACSData(ctGeos, yearList=yearList, table = tn)
 
@@ -320,7 +320,7 @@ dataset <- dataset %>%
 # write table
 write.table(
     dataset,
-    file.path("data", "educational_attainment_2018.csv"),
+    file.path("data", "educational_attainment_2019.csv"),
     sep = ",",
     row.names=F,
     na = "-9999"
